@@ -572,4 +572,28 @@ function stopPropagationOnLoad(event) {
     });
   }
   
-  
+  // Sélectionner le bouton "+ Ajouter photo"
+const addPhotoButton = document.getElementById('modal2-photo-add-button');
+
+// Ajouter un gestionnaire d'événements au clic sur le bouton "+ Ajouter photo"
+addPhotoButton.addEventListener('click', function() {
+    fileInput.click(); // Simuler le clic sur l'élément input de type fichier
+});
+
+// Ajouter un écouteur d'événements 'change' à l'élément input de type fichier
+fileInput.addEventListener('change', function(e) {
+    // Vérifier si un fichier a été sélectionné
+    if (e.target.files && e.target.files[0]) {
+        // Afficher l'image sélectionnée
+        const imgLoaded = document.querySelector(".img-loaded");
+        imgLoaded.src = URL.createObjectURL(e.target.files[0]);
+
+        // Afficher le conteneur d'image
+        const imgLoadedContainer = document.querySelector(".img-loaded-container");
+        imgLoadedContainer.style.display = "block";
+
+        // Masquer le conteneur de l'input fichier
+        const fileInputContainer = document.querySelector(".file-input-container");
+        fileInputContainer.style.display = "none";
+    }
+});

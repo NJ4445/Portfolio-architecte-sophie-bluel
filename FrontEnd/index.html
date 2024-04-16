@@ -62,16 +62,16 @@
 								</svg>
 							</div>
 							<!-- L'input de type file -->
-							<input type="file" id="file-input" name="file" accept=".jpg, .png" >
+							<input type="file" id="file-input" name="file" accept=".jpg, .png" style="display: none;" >
+							<button id="modal2-photo-add-button">+ Ajouter photo</button>
 							<a>jpg, png : 4mo max</a>
 						</div>
 						<div class="img-loaded-container">
 							<img src="" alt="zefvzefée" class="img-loaded">
 						</div>
 					</form>
-
 					<section class="champ-saisie">
-						<div class="titre-section">
+						<div class="titre-section"> 
 							<label for="titre">Titre</label>
 							<input type="text" id="titre" name="titre" autocomplete="off">
 						</div>
@@ -84,11 +84,9 @@
 							</select>
 						</div>
 					</section>
-
 						<hr class="modal2-line">
 						<!-- Ligne de séparation -->
-						<button id="modal2-button">Valider</button>
-					
+						<button id="modal2-button">Valider</button> 
 					<div id="success-message" style="display: none;"></div>
 					<!-- Div pour afficher les messages de succès -->
 				</div>

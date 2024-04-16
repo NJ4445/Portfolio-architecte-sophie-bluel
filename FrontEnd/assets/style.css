@@ -562,10 +562,24 @@ hr
 	margin-left: 50px;
 }
 
-#file-input
+/* #file-input
 {
 	width: 200px;
 	margin-bottom: 20px;
+}*/
+
+#modal2-photo-add-button {
+	width: 173px;
+    height: 36px;
+    font-size: 14px;
+    font-weight: 550;
+    font-family: "Work Sans";
+    border: none;
+    border-radius: 50px;
+    background-color: #CBD6DC;
+    color: #306685;
+    cursor: pointer;
+    margin: -10px 15px 10px; 
 }
 
 .addWorkForm a
