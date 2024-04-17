@@ -359,6 +359,13 @@ function resetInputFields() {
   categorieSelect.selectedIndex = 0; 
 }
 
+function resetSubmitButton() {
+  const modal2Button = document.getElementById('modal2-button');
+  modal2Button.disabled = false;
+  modal2Button.style.backgroundColor = 'gray';
+}
+
+
 // Gérer l'événement click sur le bouton "Valider" dans la modal2
 const modal2Button = document.getElementById('modal2-button');
 if (modal2Button) {
@@ -412,6 +419,8 @@ if (modal2Button) {
               resetModalContent();
  
               refreshModalGallery();
+
+              resetSubmitButton();
 
           } else {
               console.error('Échec de l\'ajout du nouveau travail.');
