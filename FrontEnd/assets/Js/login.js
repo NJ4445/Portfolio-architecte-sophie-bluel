@@ -5,14 +5,10 @@ function connectUser(event) {
     let userPassword = document.getElementById("password").value;
 
     if (userEmail === "") {
-        // Afficher un message d'erreur à l'utilisateur
-        console.log("E-mail vide");
         return;
     }
 
     if (userPassword === "") {
-        // Afficher un message d'erreur à l'utilisateur
-        console.log("Mot de passe vide");
         return;
     }
 
@@ -41,12 +37,10 @@ function connectUser(event) {
             localStorage.setItem("token", userToken);
             document.location.href = "./index.html";
         } else {
-            // Gérer l'absence de token ou d'autres erreurs côté serveur
             console.error("Erreur lors de la récupération du token.");
         }
     })
     .catch(error => {
-        // Gérer les erreurs de connexion
         console.error('Erreur de connexion:', error);
         document.getElementById("error-message").innerText = "E-mail ou mot de passe incorrect";
     });
