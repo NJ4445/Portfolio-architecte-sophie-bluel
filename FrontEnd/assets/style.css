@@ -307,7 +307,6 @@ li.strong
 	font-weight: bold;
 }
 
-/* Ajout de la règle pour le message d'erreur */
 #error-message
 {
 	font-family: 'Work Sans';
@@ -335,7 +334,7 @@ nav li a
 .open-modal
 {
 	position: absolute;
-	top: 610px;
+	top: 607px;
 	margin-left: 700px;
 	display: inline-flex;
 	align-items: center;

@@ -510,11 +510,9 @@ if (backToModal1Button) {
 function closeModal2() {
   const modal2 = document.getElementById('modal2');
   modal2.style.display = 'none';
-  console.log('Modal2 fermée');
 
   const modal1 = document.getElementById('modal1');
   modal1.style.display = 'none';
-  console.log('Modal1 fermée');
 
   const overlay = document.getElementById('overlay');
   overlay.style.display = 'none'; 
