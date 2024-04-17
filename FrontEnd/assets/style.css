@@ -372,7 +372,7 @@ nav li a
 	position: absolute;
 	display: flex;
 	width: 40%;
-    height: 70%;
+    height: 75%;
 	top: 100%;
 	left: 50%;
 	border-radius: 10px;
@@ -619,7 +619,7 @@ hr
 {
 	width: 50%;
 	height: 36px;
-	margin: 20px 120px;
+	margin: 20px 140px ;
 	border: 1px solid;
 	border-radius: 60px;
 	color: #FFF;
@@ -628,6 +628,7 @@ hr
 	font-weight: 700;
 	cursor: pointer;
 	text-align: center;
+	align-items: center;
 	justify-content: center;
 	background-color: gray;
 }
@@ -664,7 +665,7 @@ hr
 	font-weight: 700;
 	color: black;
 	padding: 10px 0;
-	margin: -20px 0;
+	display: none;
 }
 
 .modal2-line
