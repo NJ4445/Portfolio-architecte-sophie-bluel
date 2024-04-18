@@ -246,7 +246,7 @@ async function getElements() {
       displayWorks(); 
   } catch (error) {
       console.error('Une erreur s\'est produite :', error);
-  }
+  } 
 }
 
 // Appel de la fonction pour récupérer les éléments au chargement de la page
