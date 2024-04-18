@@ -54,6 +54,9 @@ if (isUserConnected) {
       location.reload();
   });
 
+console.log('Utilisateur connecté :', isUserConnected);
+console.log('Token de l\'utilisateur :', userToken);
+
   // Affichage de la section "Mode édition" et du bouton pour ouvrir la fenêtre modale
   handleUserConnection(true);
 
@@ -224,10 +227,12 @@ async function getElements() {
       // Récupérer les travaux depuis l'API
       const worksResponse = await fetch('http://localhost:5678/api/works');
       works = await worksResponse.json(); 
+      console.log('Travaux récupérés :', works);
 
       // Récupérer les catégories de travaux depuis l'API
       const categoriesResponse = await fetch('http://localhost:5678/api/categories');
       const categories = await categoriesResponse.json(); 
+      console.log('Catégories de filtres récupérées :', categories);
 
       // Ajouter les catégories à l'ensemble categoriesSet
       categories.forEach(category => {

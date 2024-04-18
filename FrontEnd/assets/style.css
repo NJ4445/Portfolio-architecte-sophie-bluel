@@ -372,7 +372,7 @@ nav li a
 	position: absolute;
 	display: flex;
 	width: 30%;
-    height: 75%;
+    height: 72%;
 	top: 100%;
 	left: 50%;
 	border-radius: 10px;
@@ -385,6 +385,9 @@ nav li a
 	box-sizing: border-box;
 	margin: auto;
 }
+.modal-container {
+    max-height: 100%;
+}
 
 .modal-content {
     display: flex;
@@ -393,16 +396,16 @@ nav li a
 }
 
 
-.modal-title
-{
-	font-family: "Work Sans";
-	font-size: 26px;
+#modal1-title h2 {
 	font-weight: 400;
 	line-height: 30px;
 	letter-spacing: 0em;
 	text-align: center;
-	color: #000;
+	margin: 15px;
 	padding: 5% 0;
+	font-family: "Work Sans";
+	font-size: 20px;
+    color: #000;
 }
 
 .modal-close ,
@@ -434,14 +437,13 @@ nav li a
 	align-items: flex-start;
 	gap: 12px;
 	padding: 0 5px;
-	max-height: 60vh;
-	overflow-y: auto;
+	max-height: 60%;
 }
 
 .modal1-gallery figure
 {
 	position: relative;
-	width: 18.3%;
+	width: 22%;
 	max-width: calc(100% / 5 - 10px);
 	height: auto;
 	display: flex;
@@ -474,7 +476,7 @@ hr
 {
 	width: 95%;
 	height: 1px;
-	margin-top: 30px;
+	margin-top: 60px;
 	background-color: #B3B3B3;
 	border: none;
 }
@@ -487,20 +489,6 @@ hr
 }
 
 /* Modal 2*/
-.img-loaded-container
-{
-	display: none;
-	width: 500px;
-	height: 180px;
-	max-width: 100%;
-}
-
-.img-loaded
-{
-	max-width: 100%;
-	max-height: 100%;
-}
-
 .img-loaded-container
 {
 	display: none;
@@ -530,9 +518,15 @@ hr
 
 #modal2 #modal2-title h2
 {
+	font-weight: 400;
+	line-height: 30px;
+	letter-spacing: 0em;
 	text-align: center;
+	margin: 5px;
+	padding: 5% 0;
+	font-family: "Work Sans";
 	font-size: 20px;
-	margin: 20px ;
+    color: #000;
 }
 
 .addWorkForm
@@ -664,8 +658,9 @@ hr
 	font-size: 15px;
 	font-weight: 700;
 	color: black;
-	padding: 10px 0;
+	
 	display: none;
+	margin-top: -5px;
 }
 
 .modal2-line
