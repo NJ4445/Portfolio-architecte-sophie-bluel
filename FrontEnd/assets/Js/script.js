@@ -243,7 +243,7 @@ async function getElements() {
       createFilterButtons(); 
 
       // Afficher les travaux par défaut
-      displayWorks();
+      displayWorks(); 
   } catch (error) {
       console.error('Une erreur s\'est produite :', error);
   }
