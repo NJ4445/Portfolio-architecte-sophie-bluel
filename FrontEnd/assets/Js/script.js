@@ -240,7 +240,7 @@ async function getElements() {
       });
 
       // Créer les boutons de filtres
-      createFilterButtons();
+      createFilterButtons(); 
 
       // Afficher les travaux par défaut
       displayWorks();
