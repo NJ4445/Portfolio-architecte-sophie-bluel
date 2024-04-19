@@ -371,7 +371,7 @@ function resetSubmitButton() {
 }
 
 
-// Gérer l'événement click sur le bouton "Valider" dans la modal2
+// Gérer l'événement click sur le bouton "Valider" dans la modal2 
 const modal2Button = document.getElementById('modal2-button');
 if (modal2Button) {
   modal2Button.addEventListener('click', async function(event) {
