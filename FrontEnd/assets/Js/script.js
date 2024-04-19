@@ -520,7 +520,7 @@ if (backToModal1Button) {
   });
 }
 
-// Fonction pour fermer la modal2 et la modal1
+// Fonction pour fermer la modal2 et la modal1 
 function closeModal2() {
   const modal2 = document.getElementById('modal2');
   modal2.style.display = 'none';
