@@ -47,4 +47,4 @@ function connectUser(event) {
 }
 
 const form = document.getElementById("log-in_form");
-form.addEventListener("submit", connectUser);
+form.addEventListener("submit", connectUser); 
