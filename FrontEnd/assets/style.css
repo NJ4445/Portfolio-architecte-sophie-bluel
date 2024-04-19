@@ -534,7 +534,7 @@ hr
 }
 
 /** Formulaire **/
-.addWorkForm
+.addWorkForm 
 {
 	display: flex;
 	flex-direction: column;
