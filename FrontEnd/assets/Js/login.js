@@ -48,4 +48,3 @@ function connectUser(event) {
 
 const form = document.getElementById("log-in_form");
 form.addEventListener("submit", connectUser);
-console.log(form);
